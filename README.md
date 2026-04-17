@@ -64,3 +64,30 @@ To implement a custom SDN controller using POX.
 - Mininet connection
 - Ping results
 - Packet processing logs
+
+## Phase 4: Link Failure Detection & Validation
+
+### Objective
+To detect link failures and validate network behavior.
+
+### Test Scenarios
+
+#### Scenario 1: Normal Operation
+- All links active
+- Ping successful
+- 0% packet loss
+
+#### Scenario 2: Link Failure
+- Link between s1 and s2 is brought down
+- Controller detects failure
+- Traffic rerouted via alternate path
+
+### Observations
+- Controller successfully detects link failure
+- Network remains operational due to redundancy
+
+### Screenshots
+- Normal ping results
+- Topology view
+- Link failure detection logs
+- Ping after failure
