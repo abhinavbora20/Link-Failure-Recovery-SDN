@@ -1,3 +1,4 @@
+
 from mininet.topo import Topo
 
 class CustomTopo(Topo):
@@ -11,10 +12,13 @@ class CustomTopo(Topo):
         s2 = self.addSwitch('s2')
         s3 = self.addSwitch('s3')
 
-        # Links
+        # Main path
         self.addLink(h1, s1)
         self.addLink(s1, s2)
         self.addLink(s2, s3)
         self.addLink(s3, h2)
+
+        # 🔁 Alternate path (VERY IMPORTANT)
+        self.addLink(s1, s3)
 
 topos = {'custom': (lambda: CustomTopo())}
