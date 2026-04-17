@@ -40,3 +40,27 @@ h1 — s1 — s2 — s3 — h2
 - Node list
 - Ping results
 - Network links
+
+## Phase 3: Custom Controller Implementation
+
+### Objective
+To implement a custom SDN controller using POX.
+
+### Features
+- Handles PacketIn events
+- Implements flooding-based forwarding
+- Detects link status changes
+
+### Implementation Details
+- PacketIn events are processed and packets are forwarded using FLOOD
+- PortStatus events detect link up/down
+
+### Results
+- Successful communication between hosts
+- Controller logs show packet handling
+
+### Screenshots
+- Controller startup
+- Mininet connection
+- Ping results
+- Packet processing logs
