@@ -18,7 +18,7 @@ class CustomTopo(Topo):
         self.addLink(s2, s3)
         self.addLink(s3, h2)
 
-        # 🔁 Alternate path (VERY IMPORTANT)
+        # 🔁 Alternate redundant path (VERY IMPORTANT)
         self.addLink(s1, s3)
 
 topos = {'custom': (lambda: CustomTopo())}
