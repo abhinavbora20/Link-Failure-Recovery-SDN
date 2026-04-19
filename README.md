@@ -68,7 +68,11 @@ h1 — s1 — s2 — s3 — h2
 * Custom topology
 * Node list
 * Ping results
+<img width="1470" height="956" alt="custom topology(links and host), node check, pingall" src="https://github.com/user-attachments/assets/27a053f0-cd68-457d-a065-b95979d6bb3b" />
+
 * Network links
+<img width="1320" height="304" alt="link visualisation(design)" src="https://github.com/user-attachments/assets/31f9b685-a2ee-4b75-8740-2376747d8eab" />
+
 
 ---
 
@@ -98,9 +102,15 @@ To implement a custom SDN controller using POX.
 ### Screenshots
 
 * Controller startup
+<img width="1470" height="956" alt="custom controller started   switch connected" src="https://github.com/user-attachments/assets/0e42d5c2-236b-49d5-a2ad-5c5baefd370d" />
+
 * Mininet connection
 * Ping results
+<img width="1470" height="956" alt="mininet started, connected to controler + pingall" src="https://github.com/user-attachments/assets/25b5ec37-2525-4087-a371-603a6a438aad" />
+
 * Packet processing logs
+  <img width="1470" height="956" alt="packet handling" src="https://github.com/user-attachments/assets/89cb141b-8659-44b0-9b0d-6fdf87c482e2" />
+
 
 ---
 
@@ -133,8 +143,12 @@ To detect link failures and validate network behavior.
 
 * Normal ping results
 * Topology view
-* Link failure detection logs
 * Ping after failure
+<img width="1470" height="956" alt="Normal vs link Failure( restore)" src="https://github.com/user-attachments/assets/88b7a189-20ba-4104-82b9-43b0d9e62bb3" />
+
+* Link failure detection logs
+<img width="1470" height="956" alt="link faiilure" src="https://github.com/user-attachments/assets/6c62d6ef-6868-44d3-a090-1d63b260d90a" />
+
 
 ---
 
@@ -218,9 +232,21 @@ Performance analysis shows that topology and routing behavior significantly impa
 ## Proof of Execution
 
 * Flow table output using `dpctl dump-flows`
+<img width="1099" height="370" alt="flow_before_failure" src="https://github.com/user-attachments/assets/4ccb9e57-97c2-46c0-b694-04a6ddf1ba0b" />
+<img width="1126" height="105" alt="flow table analysis" src="https://github.com/user-attachments/assets/20708fa9-4780-4ef9-9659-020548a68989" />
+
 * Ping results before and after failure
+<img width="1470" height="956" alt="ping_latency" src="https://github.com/user-attachments/assets/4b872e0f-11e9-4ded-8610-4ce57262fa34" />
+<img width="1126" height="247" alt="ping after failure" src="https://github.com/user-attachments/assets/fbbe43f1-5e68-4d82-a037-d94d020f4e1c" />
+
 * Iperf results before and after failure
-* Controller logs showing link failure detection
+<img width="1103" height="249" alt="Through(iperf) bandwidth before" src="https://github.com/user-attachments/assets/e200a90e-98cb-4c95-9e02-ef7e3cfcc7d8" />
+<img width="1087" height="384" alt="bandwidth after failure" src="https://github.com/user-attachments/assets/80b5c24c-f11b-443d-9bed-30e48839e86f" />
+
+
+* Controller logs showing before link failure detection
+<img width="1470" height="956" alt="Controller running + switches connected" src="https://github.com/user-attachments/assets/5a2c1619-ecd5-4e75-a9d9-c767bc014481" />
+
 
 ---
 
