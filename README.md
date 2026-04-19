@@ -30,8 +30,12 @@ To verify that Mininet and POX controller are correctly installed and functionin
 ### Screenshots
 
 * POX running
+<img width="1470" height="956" alt="deafault pox Controller running" src="https://github.com/user-attachments/assets/be7474e0-e144-4fc8-90d0-ae353fd6d588" />
+
 * Mininet startup
 * Ping results
+<img width="1470" height="956" alt="default mininet and pingall success" src="https://github.com/user-attachments/assets/eddc08f1-81ea-4251-a638-61b582f05d1c" />
+
 
 ---
 
