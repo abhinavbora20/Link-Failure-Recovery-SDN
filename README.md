@@ -91,3 +91,51 @@ To detect link failures and validate network behavior.
 - Topology view
 - Link failure detection logs
 - Ping after failure
+
+## Phase 5: Performance Observation & Analysis
+
+### Metrics Measured
+
+#### 1. Latency (Ping)
+- Measured using ICMP ping
+- Observed RTT values
+
+#### 2. Throughput (Iperf)
+- Measured bandwidth between hosts
+- Stable performance observed
+
+#### 3. Flow Table
+- Observed OpenFlow rules
+- Verified packet forwarding behavior
+
+### Before Failure
+- Low latency
+- Lower throughput (~38 Kbits/sec)
+- Traffic handled using flooding (less efficient)
+
+### After Failure
+- Slight variation in latency
+- Higher throughput (~82 Mbits/sec)
+- Traffic rerouted through a more efficient alternate path
+- Network remained fully functional
+
+### Key Insight
+The increase in throughput after failure indicates that the alternate path provided a more efficient route, reducing overhead caused by flooding and improving performance.
+
+### Observations
+- The network remains functional even after link failure due to redundancy
+- Latency shows minimal impact
+- Throughput improved after failure due to better path utilization
+- Flooding ensures connectivity but is not optimal for performance
+
+### ConclusionThe system successfully maintains performance even after link failure due to redundancy.
+The SDN-based network successfully maintains connectivity during link failure.
+Performance analysis shows that topology and routing behavior significantly impact throughput and latency.
+
+
+### Screenshots
+- Ping results
+- Iperf results
+- Flow table
+- After failure metrics
+
