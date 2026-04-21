@@ -232,6 +232,8 @@ Performance analysis shows that topology and routing behavior significantly impa
 ## Proof of Execution
 
 * Flow table output using `dpctl dump-flows`
+- Flow table entries observed before failure correspond to control-plane traffic (LLDP)
+- After failure, no persistent flow rules are installed as flooding is used
 <img width="1099" height="370" alt="flow_before_failure" src="https://github.com/user-attachments/assets/4ccb9e57-97c2-46c0-b694-04a6ddf1ba0b" />
 <img width="1126" height="105" alt="flow table analysis" src="https://github.com/user-attachments/assets/20708fa9-4780-4ef9-9659-020548a68989" />
 
