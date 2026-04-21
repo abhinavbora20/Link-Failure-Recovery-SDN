@@ -235,7 +235,6 @@ Performance analysis shows that topology and routing behavior significantly impa
 - Flow table entries observed before failure correspond to control-plane traffic (LLDP)
 - After failure, no persistent flow rules are installed as flooding is used
 <img width="1099" height="370" alt="flow_before_failure" src="https://github.com/user-attachments/assets/4ccb9e57-97c2-46c0-b694-04a6ddf1ba0b" />
-<img width="1126" height="105" alt="flow table analysis" src="https://github.com/user-attachments/assets/20708fa9-4780-4ef9-9659-020548a68989" />
 
 * Ping results before and after failure
 <img width="1470" height="956" alt="ping_latency" src="https://github.com/user-attachments/assets/4b872e0f-11e9-4ded-8610-4ce57262fa34" />
