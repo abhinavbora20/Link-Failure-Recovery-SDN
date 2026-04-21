@@ -1,0 +1,44 @@
+COMMMANDS TO RUN:
+1. Temrminal 1 - start controller
+cd ~/pox
+source pox-env/bin/activate
+sudo pkill -f pox
+python pox.py openflow.discovery misc.link_failure
+
+2. Terminal 2 - start mininet
+cd ~/Link-Failure-Recovery-SDN
+sudo mn -c
+sudo mn --custom topology/custom_topo.py --topo custom --controller=remote
+
+3. Show topology- custom topology with redundant path
+mininet> net
+
+4. Connectivity test
+mininet> pingall
+
+SEE RTT(LATENCY) before failure
+mininet> h1 ping -c 5 h2
+
+5. Flow table before failure
+mininet> dpctl dump-flows
+
+6. Throughtout(Bandwidth -iperf)
+server start:
+mininet> h2 iperf -s &
+Client start:
+mininet> h1 iperf -c 10.0.0.2
+
+7. Simulate Link failure 
+mininet> link s1 s2 down
+SEE RTT(LATENCY) after failure
+mininet> h1 ping -c 5 h2
+
+8. TESTS AFTER FAILURE
+mininet> pingall
+mininet> h2 iperf -s &
+mininet> h1 iperf -c 10.0.0.2
+mininet> dpctl dump-flows
+mininet> net
+
+mininet> exit
+Ctrl + C
